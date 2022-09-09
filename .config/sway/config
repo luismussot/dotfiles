@@ -21,6 +21,7 @@ set $filemanager pcmanfm
 #default properties
 default_border pixel 
 gaps inner 10
+client.focused "#ba8059" "#ba8059" "#ffffff" "#ffffff"
 
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
