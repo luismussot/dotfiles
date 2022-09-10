@@ -23,7 +23,10 @@ alias efnv='nvim .config/nvim/init.lua'
 alias efnw='nvim .config/newsboat/urls'
 alias efsw='nvim .config/sway/config'
 alias efwb='nvim .config/waybar/config'
+alias efwbs='nvim .config/waybar/style.css'
 alias efsh='nvim .bashrc'
+alias efrf='nvim .config/rofi/config.rasi'
+alias efrfs='nvim .config/rofi/theme.rasi'
 alias config='/usr/bin/git --git-dir=/home/lm/.cfg/ --work-tree=/home/lm'
 # alias nw = 'newsboat'
 
@@ -33,6 +36,7 @@ export EDITOR='nvim'
 export VISUAL='nvim'
 export BROWSER='firefox'
 export TERM='alacritty'
+# export XDG_CURRENT_DESKTOP=$DESKTOP_SESSION
 
 
 #PROMPT
