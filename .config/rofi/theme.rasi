@@ -1,0 +1,85 @@
+*{
+	background: #282a36;
+	current-line: #44475a;
+	foreground: #f8f8f2;
+	comment: #6272a4;
+	cyan: #8be9fd;
+	green: #50fa7b;
+	orange: #ffb86c;
+	pink: #ff79c6;
+	purple: #bd93f9;
+	red: #ff5555;
+	yellow: #f1fa8c;
+	/* bc: #ba8059; */
+	background-color: @background;
+}
+window
+{
+	border-color: @purple; 
+	border: 3;
+	padding: 5;
+	width: 25%;
+}
+mainbox
+{
+	/* border: 10; */
+	padding: 0;
+}
+listview
+{
+	border: 2px 0px 0px ; 
+	border-color: @purple;
+	spacing: 2px ;
+	scrollbar: true;
+	padding: 2px 0px 0px;
+}
+element-icon
+{
+	size: 25;
+	background-color: inherit;
+}
+element{
+	border: 0;
+	padding: 1px;
+}
+element-text{
+	background-color: inherit;
+	text-color: @foreground;
+}
+element.normal.normal{
+	background-color: inherit;
+	text-color: @foreground;
+}
+element.normal.active{
+	/* background-color: @current-line; */
+	/* text-color: @orange; */
+}
+element.selected.normal{
+	background-color: @current-line;
+	text-color: @orange;
+}
+scrollbar 
+{
+	width: 4px;
+	border: 0;
+	handle-color: @purple;
+	handle-width: 10px;
+}
+inputbar
+{
+	/* children: [prompt,textbox-prompt-colon]; */
+	spacing: 0;
+	text-color: @foreground;
+	padding: 1px;
+}
+
+prompt
+{
+	spacing: 0;
+	text-color: @green;
+}
+entry
+{
+	spacing: 0;
+	text-color: @foreground;
+}
