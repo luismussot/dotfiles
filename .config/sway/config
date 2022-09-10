@@ -19,15 +19,18 @@ set $browser firefox
 set $filemanager pcmanfm
 
 #default properties
+
+exec autotiling
 default_border pixel 
-gaps inner 10
-client.focused "#ba8059" "#ba8059" "#ffffff" "#ffffff"
+gaps inner 5
+client.focused "#bd93f9" "#bd93f9" "#f8f8f2" "#f8f8f2"
 
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu exec wofi --show drun
+# set $menu exec wofi --show drun
 # set $menu dmenu swaymsg exec --
+set $menu exec rofi -show drun
 
 ### Output configuration
 #
@@ -92,7 +95,7 @@ output DP-1 {
     # Despite the name, also works for non-floating windows.
     # Change normal to inverse to use left mouse button for resizing and right
     # mouse button for dragging.
-    floating_modifier $mod normal
+    # floating_modifier $mod normal
 
     # Reload the configuration file
     bindsym Mod1+Shift+r reload
@@ -187,7 +190,9 @@ bindsym Mod1+r mode "resize"
 #
 # Status Bar:
 #
-bar swaybar_command waybar
+bar {
+	swaybar_command waybar
+}
 
 #Cursor theme
 # seat seat0 xcursor_theme Sweet_cursors 24 
@@ -202,3 +207,4 @@ bar swaybar_command waybar
 # flameshot	screenshot tool
 # xorg-xwayland X server than runs on wayland and provides backwards compatibility with legacy X11 apps.
 # waybar customizable bar for sway
+# autotiling script from AUR to turn into dynamic tiling wm
