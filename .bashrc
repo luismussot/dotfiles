@@ -9,8 +9,12 @@
 # set -o vi
 
 #ALIASES
-alias ls='ls --color=auto'
-alias syu='sudo pacman -Syu && paru -Sua && flatpak update'
+# alias ls='ls --color=auto'
+alias ls='exa --long --icons -s=type'
+alias ll='exa --long -a --icons -s=type'
+alias lt='exa --long --icons --tree -s=type'
+alias ln='sudo ln'
+alias syu='sudo pacman -Syu && flatpak update && paru -Sua'
 alias pacman='sudo pacman'
 # alias paru='sudo paru'
 alias efaw='nvim .config/awesome/rc.lua'
