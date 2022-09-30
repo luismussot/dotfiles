@@ -43,6 +43,9 @@ lsp.bashls.setup{on_attach = on_attach, flags = lsp_flags,}
 -- YAML
 lsp.yamlls.setup{on_attach = on_attach, flags = lsp_flags,}
 
+-- Rust (rust-analyzer)
+lsp.rust_analyzer.setup{on_attach = on_attach, flags = lsp_flags,}
+
 -- Lua
 lsp.sumneko_lua.setup {on_attach = on_attach, flags = lsp_flags,
   settings = {
