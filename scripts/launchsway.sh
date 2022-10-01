@@ -7,3 +7,4 @@ export XDG_SESSION_DESKTOP=sway
 export GDK_BACKEND="wayland,x11"
 export MOZ_ENABLE_WAYLAND=1
 exec sway
+# exec dbus-run-session sway
